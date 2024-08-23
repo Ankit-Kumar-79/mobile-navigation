@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 4 Template</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Styles for mobile view */
+      @media only screen and (max-width: 480px) {
+        .cardmainContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          overflow-x: scroll;
+          margin-top: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .card1 {
+          display: grid;
+          grid-auto-flow: column;
+          gap: 3px;
+          width: 100%;
+        }
+
+        .card {
+          width: 70px !important;
+          height: 70px !important;
+        }
+      }
+
+      /* Styles for other screen sizes (optional) */
+      @media only screen and (min-width: 500px) {
+        .cardmainContainer,
+        .card1,
+        .card {
+          display: none; /* Hide the elements for larger screens */
+        }
+      }
+      /* mobile menu */
+      /* Styles for mobile view */
+      @media only screen and (max-width: 480px) {
+        .mobile-menu {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #f0f0f0; /* Adjust as needed */
+          padding: 10px;
+          box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for visual effect */
+          z-index: 1000; /* Ensure it appears above other content */
+          display: flex;
+          justify-content: space-around; /* Adjust alignment of menu items */
+        }
+
+        .mobile-menu-item {
+          color: #333;
+          font-size: 14px;
+          padding: 5px 10px;
+          border-radius: 5px;
+          background-color: #fff;
+          text-decoration: none;
+        }
+
+        /* Example styles for active menu item */
+        .mobile-menu-item.active {
+          background-color: #007bff; /* Active item background color */
+          color: #fff; /* Active item text color */
+        }
+      }
+
+      /* Styles for other screen sizes (optional) */
+      @media only screen and (min-width: 500px) {
+        .mobile-menu {
+          display: none; /* Hide the menu for larger screens */
+        }
+      }
+    </style>
+    <!-- <style>
+      .cardmainContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        overflow-x: scroll;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .card1 {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3px;
+        width: 100%;
+      }
+      .card {
+        width: 70px !important;
+        height: 70px !important;
+      }
+    </style> -->
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#" class="mobile-menu-item active">Home</a>
+      <a href="#" class="mobile-menu-item">Cart</a>
+      <a href="#" class="mobile-menu-item">Order</a>
+      <a href="#" class="mobile-menu-item">User</a>
+    </div>
+
+    <div class="cardmainContainer">
+      <div class="card1">
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mt-5">
+      <h1>Welcome to Our Website</h1>
+      <p>
+        This is a Bootstrap 4 template. Feel free to customize it according to
+        your needs.
+      </p>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-2">
+          <img
+            src="https://via.placeholder.com/150"
+            class="img-fluid"
+            alt="Image 1"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://via.placeholder.com/150"
+            class="img-fluid"
+            alt="Image 2"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://via.placeholder.com/150"
+            class="img-fluid"
+            alt="Image 3"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://via.placeholder.com/150"
+            class="img-fluid"
+            alt="Image 4"
+          />
+        </div>
+        <div class="col-md-2">
+          <img
+            src="https://via.placeholder.com/150"
+            class="img-fluid"
+            alt="Image 5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

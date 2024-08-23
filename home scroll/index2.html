@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 4 Template</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      /* Styles for mobile view */
+      @media only screen and (max-width: 480px) {
+        .cardmainContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+          overflow-x: scroll;
+          margin-top: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        .card1 {
+          display: grid;
+          grid-auto-flow: column;
+          gap: 3px;
+          width: 100%;
+        }
+
+        .card {
+          width: 70px !important;
+          height: 70px !important;
+        }
+      }
+
+      /* Styles for other screen sizes (optional) */
+      @media only screen and (min-width: 500px) {
+        .cardmainContainer,
+        .card1,
+        .card {
+          display: none; /* Hide the elements for larger screens */
+        }
+      }
+      /* mobile menu */
+      /* Styles for mobile view */
+      @media only screen and (max-width: 768px) {
+        .mobile-menu {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #f1f1f1;
+          padding: 10px;
+          box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+          display: flex;
+          justify-content: space-around;
+          border-radius: 10px;
+          /* position: relative; For positioning the line */
+        }
+
+        .mobile-menu-item {
+          color: #333;
+          font-size: 14px;
+          padding: 10px 20px;
+          border-radius: 30px;
+          text-decoration: none;
+          transition: background-color 0.3s;
+          position: relative;
+        }
+
+        /* Active item styles */
+        .mobile-menu-item.active {
+          /* background-color: #007bff; Active item background color */
+          color: #ee6b6b;
+          font-weight: bold;
+        }
+
+        /* Line above the active item */
+        .menu-line {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 2px;
+          background-color: #ee6b6b;
+          transition: transform 0.3s ease, width 0.3s ease;
+        }
+      }
+
+      /* Styles for other screen sizes (optional) */
+      @media only screen and (min-width: 769px) {
+        .mobile-menu {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Your Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <a href="#" class="mobile-menu-item active" id="home">Home</a>
+      <a href="#" class="mobile-menu-item" id="cart">Cart</a>
+      <a href="#" class="mobile-menu-item" id="order">Order</a>
+      <a href="#" class="mobile-menu-item" id="user">User</a>
+      <div class="menu-line"></div>
+    </div>
+
+    <div class="cardmainContainer">
+      <div class="card1">
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card1">
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <div class="prdct">
+            <img
+              src="https://via.placeholder.com/150"
+              class="img-fluid"
+              alt="Image 1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="container mt-5">
+      <h1>Welcome to Our Website</h1>
+      <p>
+        This is a Bootstrap 4 template. Feel free to customize it according to
+        your needs.
+      </p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      // Get all menu items and the menu line
+      const menuItems = document.querySelectorAll(".mobile-menu-item");
+      const menuLine = document.querySelector(".menu-line");
+
+      // Function to update the position of the menu line
+      function updateMenuLine() {
+        const activeItem = document.querySelector(".mobile-menu-item.active");
+        if (activeItem) {
+          const rect = activeItem.getBoundingClientRect();
+          menuLine.style.width = `${rect.width}px`;
+          menuLine.style.transform = `translateX(${rect.left}px)`;
+        }
+      }
+
+      // Add click event listener to each menu item
+      menuItems.forEach((item) => {
+        item.addEventListener("click", function () {
+          // Remove 'active' class from all menu items
+          menuItems.forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Add 'active' class to the clicked menu item
+          this.classList.add("active");
+
+          // Update the position of the menu line
+          updateMenuLine();
+        });
+      });
+
+      // Initial update of the menu line position
+      updateMenuLine();
+    </script>
+  </body>
+</html>
